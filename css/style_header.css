@@ -1,0 +1,91 @@
+@import url('common.css');
+
+.header {
+    padding: 20px;
+    background-color: aquamarine;
+}
+.footer {
+    padding: 20px;
+    background-color: darkolivegreen;
+}
+.topMenu {
+    background-color: #fff;
+    text-align: center;
+}
+.topMenu li {
+    width:20%;
+    background-color: darkorange;
+    color: #fff;
+    display: inline-block;
+}
+topMenu > li > ul {
+    visibility: hidden;
+}
+.topMenu > li > ul > li {
+    display: block;
+    color: cornflowerblue;
+    text-align: center;
+    margin: 0 auto;
+}
+.topMenu > li > ul > li:hover{
+    color: crimson;
+}
+.left {
+    float: left;
+    width: 30%;
+    background-color: purple;
+}
+.contents {
+    float: right;
+    width: 70%;
+    background-color: burlywood;
+    padding-bottom: 100px;
+}
+.container::after {
+    content:""; 
+    display:block; 
+    clear: both;
+}
+.bottom {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+}
+.bottom > li {
+    display: inline-block;
+    width:20%;
+    padding: 20px;
+    color:#fff;
+    background-color: red;
+
+    position: relative;
+}
+.bottom li a:hover {
+    color:blue;
+}
+.bottom li a {
+    display: block;
+    padding: 20px;
+    background-color: white;
+    color: #000;
+}
+.bottom li.on:after {
+    position: absolute;
+    content:'';
+    width:50%;
+    height: 5px;
+    left:25%;
+    top:5px;
+    background: #fff;
+}
+body > span {
+    position:absolute;
+    top:0;
+    left:50px;
+}
+.test {
+    position:absolute;
+    right: 0;
+    top:0;
+}
