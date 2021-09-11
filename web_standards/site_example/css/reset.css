@@ -36,7 +36,7 @@ a {
     text-decoration: none;
 }
 a:hover {
-    columns: #390;
+    color: #390;
 }
 
 /* 폰트 초기화 */
