@@ -300,7 +300,7 @@
                                         <li class="layer">
                                             <a href="#"><img src="img/sban07.jpg" alt="이미지1" /></a>
                                         </li>
-                                        <li>
+                                        <li class="window">
                                             <a href="#"><img src="img/sban08.jpg" alt="이미지2" /></a>
                                         </li>
                                         <li class="last">
@@ -526,16 +526,23 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="js/slick.js"></script>
         <script type="text/javascript">
+            //윈도우 팝업
+            $('.window').click(function (e) {
+                e.preventDefault();
+                //window.open("파일명", "팝업이름", "옵션설정");
+                //옵션: left, top, width, height, status, toolbar, location, menubar, scrollbars, fullscreen
+                window.open('sample_popup.html', 'popup01', 'width=800, height=590, left=50, top=50, scrollbars=0, toolbar=0, menubar=0');
+            });
 
             //레이어 팝업
-            $('.layer').click(function(e) {
+            $('.layer').click(function (e) {
                 e.preventDefault();
                 //$('#layer').css('display', 'block');
                 //$('#layer').show();
                 //$('#layer').fadeIn();
                 $('#layer').slideDown();
             });
-            $('#layer .close').click(function(e) {
+            $('#layer .close').click(function (e) {
                 e.preventDefault();
                 //$('#layer').css('display', 'block');
                 //$('#layer').hide();
