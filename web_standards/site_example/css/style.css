@@ -5,9 +5,7 @@
 #skip a:focus { top: 0; } 
 
 /* 레이아웃 */
-#wrap { } 
 #header { height: 325px; background: url(../img/header_bg.jpg) center top repeat-x; } 
-#contents { } 
 #footer { border-top: 1px solid #eee; } 
 
 /* 컨텐츠 레이아웃 */
